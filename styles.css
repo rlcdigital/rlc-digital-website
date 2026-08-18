@@ -361,6 +361,29 @@ h2::after {
   box-shadow: 0 8px 20px rgba(255, 45, 120, 0.3);
 }
 
+/* Resources row (secondary buttons) */
+
+.resources-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 12px 28px;
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  color: var(--blue);
+  border-color: var(--blue);
+}
+
 /* Footer */
 
 .site-footer {
