@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Timesheet Management for Jira Cloud — RLC Digital</title>
+<meta name="description" content="Timesheet Management is a Jira-native time-logging and approval app from RLC Digital. LITE offers free calendar-based time logging; PRO adds a full submit, approve, forward, and lock weekly workflow.">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<!-- Reusable icon mark: rounded-square dark tile with three stacked upward chevrons (amber / pink / blue) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="icon-mark" viewBox="0 0 100 100">
+      <rect x="2" y="2" width="96" height="96" rx="20" fill="#1C1917" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+      <path d="M20 34 L50 22 L80 34" fill="none" stroke="#C8890B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M20 56 L50 44 L80 56" fill="none" stroke="#FF2D78" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M20 78 L50 66 L80 78" fill="none" stroke="#17A3F2" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="logo-lockup" aria-label="RLC Digital home">
+      <svg class="icon-mark" viewBox="0 0 100 100" role="img" aria-label="RLC Digital icon"><use href="#icon-mark"></use></svg>
+      <span class="logo-text"><span class="logo-rlc">RLC</span> <span class="logo-digital">Digital</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#services">Services</a></li>
+        <li><a href="/timesheet-management/" aria-current="page">Timesheet Management</a></li>
+        <li><a href="/#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section id="hero" class="hero">
+    <div class="container">
+      <svg class="icon-mark" viewBox="0 0 100 100" role="img" aria-label="RLC Digital"><use href="#icon-mark"></use></svg>
+      <h1>Timesheet Management for Jira Cloud</h1>
+      <p class="subhead">A time-logging and approval solution built for teams that want Jira-native worklogs without leaving their existing workflow.</p>
+    </div>
+  </section>
+
+  <section id="intro" class="section-alt">
+    <div class="container">
+      <p class="about-body">Timesheet Management comes in two tiers: LITE, a free calendar-based time-logging tool, and PRO, which adds a full submit, approve, forward, and lock weekly workflow for teams that need governance over their timesheets.</p>
+    </div>
+  </section>
+
+  <section id="lite">
+    <div class="container">
+      <div class="section-header accent-amber">
+        <h2>Timesheet Management LITE</h2>
+      </div>
+      <ul class="feature-list accent-amber">
+        <li>Calendar week grid — click a day to log time; Report tab exports to CSV/Excel</li>
+        <li>Replaces Jira's native "Log work" action and "Work log" tab when set as the site's Time Tracking Provider</li>
+        <li>No approval workflow — every worklog belongs to its own user</li>
+        <li>Admin controls: block worklogs after issue resolution date; per-user "Needs Correction" tab catches entries affected after the fact</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="pro" class="section-alt">
+    <div class="container">
+      <div class="section-header accent-blue">
+        <h2>Timesheet Management PRO</h2>
+      </div>
+      <ul class="feature-list accent-blue">
+        <li>Everything in LITE, plus a full submit, approve, forward, and lock weekly workflow</li>
+        <li>Four tabs: Calendar, Timesheet (rollup by user/space/work item, exportable, Submit Week), Needs Correction, Approvals</li>
+        <li>Approvals snapshot worklogs at approval time — they survive later edits, and a daily scan reopens approval if the source worklog is deleted</li>
+        <li>Forward: an approver can delegate approve rights for one (person, space, week) slice to someone else</li>
+        <li>Lock: once a week is fully approved site-wide, it can be locked (manual or auto) — one-way, admin-only unlock</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="cta">
+    <div class="container">
+      <div class="section-header">
+        <h2>Get in Touch</h2>
+      </div>
+      <p class="contact-body">Interested in Timesheet Management for your team? Reach out and let's talk about LITE or PRO.</p>
+      <a href="mailto:support@rlc.digital" class="btn btn-contact">support@rlc.digital</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <svg class="icon-mark" viewBox="0 0 100 100" role="img" aria-label="RLC Digital icon"><use href="#icon-mark"></use></svg>
+    <span>&copy; 2026 RLC Digital. All rights reserved.</span>
+  </div>
+</footer>
+
+</body>
+</html>
