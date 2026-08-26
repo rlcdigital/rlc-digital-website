@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="RLC Digital icon">
+  <rect x="2" y="2" width="96" height="96" rx="20" fill="#1C1917" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+  <path d="M20 34 L50 22 L80 34" fill="none" stroke="#C8890B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M20 56 L50 44 L80 56" fill="none" stroke="#FF2D78" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M20 78 L50 66 L80 78" fill="none" stroke="#17A3F2" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
