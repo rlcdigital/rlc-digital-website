@@ -371,6 +371,11 @@ h2::after {
   margin-top: 24px;
 }
 
+.lite-cta {
+  text-align: center;
+  margin-top: 24px;
+}
+
 .btn-secondary {
   background: transparent;
   color: var(--text-muted);
