@@ -99,10 +99,12 @@ a {
 }
 
 .main-nav a {
+  display: inline-block;
   text-decoration: none;
   color: var(--text);
   font-weight: 500;
   font-size: 0.95rem;
+  padding: 12px 4px;
   transition: color 0.15s ease;
 }
 
@@ -149,6 +151,13 @@ a {
   padding: 14px 32px;
   border-radius: 8px;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button.btn {
+  font-family: inherit;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 .btn-primary {
@@ -317,19 +326,29 @@ h2::after {
 }
 
 .credibility .stat {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--text);
-  padding: 8px 20px;
-  border-left: 3px solid var(--pink);
 }
 
-.credibility .stat:nth-child(2) {
-  border-left-color: var(--blue);
+.credibility .stat::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--pink);
+  flex-shrink: 0;
 }
 
-.credibility .stat:nth-child(3) {
-  border-left-color: var(--amber);
+.credibility .stat:nth-child(2)::before {
+  background: var(--blue);
+}
+
+.credibility .stat:nth-child(3)::before {
+  background: var(--amber);
 }
 
 /* Contact */
@@ -352,13 +371,13 @@ h2::after {
 }
 
 .btn-contact {
-  background: var(--pink);
+  background: var(--blue);
   color: #0B0A09;
 }
 
 .btn-contact:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(255, 45, 120, 0.3);
+  box-shadow: 0 8px 20px rgba(23, 163, 242, 0.3);
 }
 
 /* Resources row (secondary buttons) */

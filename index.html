@@ -68,6 +68,18 @@
     </div>
   </section>
 
+  <section id="product">
+    <div class="container">
+      <div class="section-header">
+        <h2>Timesheet Management for Jira</h2>
+      </div>
+      <p class="about-body">Beyond consulting, we build and maintain Timesheet Management — a Jira-native time-logging and approval app on the Atlassian Marketplace. LITE is free forever; PRO adds a full submit, approve, forward, and lock workflow for teams that need governance over their timesheets.</p>
+      <div class="lite-cta">
+        <a href="/timesheet-management/" class="btn btn-primary">Explore Timesheet Management</a>
+      </div>
+    </div>
+  </section>
+
   <section id="about" class="section-alt">
     <div class="container">
       <div class="section-header">
@@ -102,8 +114,8 @@
   <section class="credibility section-alt">
     <div class="container">
       <div class="stat">20+ Years Experience</div>
-      <div class="stat">Seamless Cloud Migrations</div>
-      <div class="stat">Atlassian Ecosystem Specialists</div>
+      <div class="stat">2 Apps on the Atlassian Marketplace</div>
+      <div class="stat">Jira, Confluence &amp; Forge Specialists</div>
     </div>
   </section>
 
@@ -112,8 +124,11 @@
       <div class="section-header">
         <h2>Get in Touch</h2>
       </div>
-      <p class="contact-body">Interested in working together? Reach out and let's talk about your Atlassian setup.</p>
+      <p class="contact-body">Interested in working together? Reach out and let's talk about your Atlassian setup. We typically reply within 1 business day.</p>
       <a href="mailto:support@rlc.digital" class="btn btn-contact">support@rlc.digital</a>
+      <div class="resources-row">
+        <button type="button" class="btn btn-secondary" id="copy-email" data-email="support@rlc.digital">Copy email address</button>
+      </div>
     </div>
   </section>
 
@@ -125,6 +140,27 @@
     <span>&copy; 2026 RLC Digital. All rights reserved.</span>
   </div>
 </footer>
+
+<script>
+  (function () {
+    var btn = document.getElementById('copy-email');
+    if (!btn) return;
+    var defaultLabel = btn.textContent;
+    btn.addEventListener('click', function () {
+      var email = btn.getAttribute('data-email');
+      if (!navigator.clipboard) {
+        btn.textContent = email;
+        return;
+      }
+      navigator.clipboard.writeText(email).then(function () {
+        btn.textContent = 'Copied!';
+        setTimeout(function () { btn.textContent = defaultLabel; }, 2000);
+      }, function () {
+        btn.textContent = email;
+      });
+    });
+  })();
+</script>
 
 </body>
 </html>
